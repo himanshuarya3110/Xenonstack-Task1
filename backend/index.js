@@ -14,12 +14,12 @@ export const app = express();
 
 // Enable CORS if needed
 app.use(cors({
-    origin: " https://xenonstack-task1.vercel.app",
+    origin: "https://xenonstack-task1.vercel.app", // Remove any extra spaces
     optionsSuccessStatus: 200,
-    // preflightContinue: false,
     methods: "GET,POST,OPTIONS",
     credentials: true
 }));
+
 
 app.use(express.json());
 app.use(urlencoded({ extended: true }));
