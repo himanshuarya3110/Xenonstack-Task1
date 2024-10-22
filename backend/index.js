@@ -14,7 +14,7 @@ export const app = express();
 
 // Enable CORS if needed
 app.use(cors({
-    origin: " https://xenonstack-task1.vercel.app/",
+    origin: " https://xenonstack-task1.vercel.app",
     optionsSuccessStatus: 200,
     preflightContinue: false,
     methods: "GET,POST,OPTIONS",
