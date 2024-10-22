@@ -1,0 +1,21 @@
+/* Profile.css */
+.profile-container {
+  padding: 2rem; /* Add padding to avoid overlap with other components */
+}
+
+.profile-card {
+  position: relative;
+  z-index: 10; /* Ensure the profile card is above other elements */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 640px) {
+  .profile-container {
+    padding: 1rem; /* Adjust padding on smaller screens */
+  }
+
+  .profile-card {
+    padding: 1.5rem; /* Reduce padding inside the card */
+  }
+}

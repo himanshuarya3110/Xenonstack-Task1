@@ -1,0 +1,104 @@
+/* Recommendation.css */
+
+/* Container Styles */
+.recommendation-container {
+  margin-top: 70px;
+  padding: 2rem;
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: visible; /* Ensure arrows are visible outside container */
+}
+
+.recommendation-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #eb2532;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Slider Padding */
+.recommendation-slider {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Card Styles */
+.recommendation-card {
+  /* padding: 1.5rem;
+  margin: 0 0.75rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  transition: transform 0.5s; */
+
+  padding: 3rem;
+  margin: 0 0.75rem;
+  background-color: #ffffff; /* Consider changing to a soft gradient */
+  background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%); /* Soft gradient */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+  border-radius: 0.95rem; /* More rounded corners */
+  transition: transform 0.3s, box-shadow 0.3s; /* Faster transitions */
+  
+  /* Optional: Add a border */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border */
+}
+
+.recommendation-card:hover {
+  /* transform: scale(1.05);
+   */
+
+   transform: scale(1.05); /* Slightly enlarges the card on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.recommendation-card-title {
+  /* font-size: 1.25rem;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 0.5rem; */
+
+
+  font-size: 1.5rem; /* Larger title font */
+    font-weight: bold; /* Bold title */
+    color: #e41919; /* Dark text color */
+}
+
+.recommendation-card-text {
+  /* color: #4b5563;
+  margin-bottom: 0.5rem; */
+
+  font-size: 1rem; /* Standard description size */
+    color: #555; /* Softer text color */
+    margin-top: 0.5rem; /* Space above description */
+    padding: 1rem;
+}
+
+
+/* Arrow Styles */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background-color 0.3s;
+  z-index: 1; /* Make sure it appears above the content */
+}
+
+.arrow:hover {
+  background-color: #1e3a8a;
+}
+
+.arrow-next {
+  right: -1rem; /* Adjust positioning for better visibility */
+}
+
+.arrow-prev {
+  left: -1rem; /* Adjust positioning for better visibility */
+}
